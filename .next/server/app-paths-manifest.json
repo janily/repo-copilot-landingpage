@@ -1,0 +1,3 @@
+{
+  "/api/generate-ai-response/route": "app/api/generate-ai-response/route.js"
+}

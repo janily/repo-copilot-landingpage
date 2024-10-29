@@ -1,0 +1,46 @@
+{
+  "Hero": {
+    "title1": "Fast Overview & Comment on ProductHunt",
+    "description": "Get AI-powered product overview and comment in 10 seconds. Save your time and amplify your impact on ProductHunt."
+  },
+  "SocialProof": {
+    "maker": "Makers or Hunter"
+  },
+  "HowItWork": {
+    "title": "How it works"
+  },
+  "Feature": {
+    "title": "Feature"
+  },
+  "Pricing": {
+    "title": "Pricing",
+    "title2": "Stand Out on Product Hunt",
+    "description": "Current discount applies to first 100 customers only",
+    "signInRequired": "Sign In Required",
+    "signInDescription": "Please sign in to complete your purchase.",
+    "doYouLike": "DM us on Twitter for a 20% discount code.",
+    "follow": "DM Twitter"
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "description1": "",
+    "description2": "",
+    "description3": ""
+  },
+  "FAQ": {
+    "title": "FAQs",
+    "description": "Here are some of the most frequently asked questions."
+  },
+  "CTA": {
+    "title": "Level Up Your Product Hunt Game",
+    "description1": "Get",
+    "description2": "PH Copilot",
+    "description3": "now and",
+    "description4": "hunt smarter",
+    "description5": ", not harder",
+    "description6": "!"
+  },
+  "CTAButton": {
+    "title": "Add to Chrome"
+  }
+}

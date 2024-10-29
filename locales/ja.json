@@ -1,0 +1,46 @@
+{
+  "Hero": {
+    "title1": "ProductHuntで素早く概要を把握し、コメントを生成",
+    "description": "AIを活用して10秒で製品の概要とコメントを取得。時間を節約し、ProductHuntでの影響力を高めましょう。"
+  },
+  "SocialProof": {
+    "maker": "メーカーまたはハンター"
+  },
+  "HowItWork": {
+    "title": "使い方"
+  },
+  "Feature": {
+    "title": "機能"
+  },
+  "Pricing": {
+    "title": "料金プラン",
+    "title2": "Product Hunt で際立つ",
+    "description": "現在の特別価格は先着100名の有料会員様限定です",
+    "signInRequired": "ログインのお願い",
+    "signInDescription": "お買い物を続けるには、ログインが必要です。",
+    "doYouLike": "Twitterでのお問い合わせで20%割引コード進呈。",
+    "follow": "DM Twitter"
+  },
+  "Testimonials": {
+    "title": "お客様の声",
+    "description1": "",
+    "description2": "",
+    "description3": ""
+  },
+  "FAQ": {
+    "title": "よくある質問",
+    "description": "最もよくある質問をまとめました。"
+  },
+  "CTA": {
+    "title": "Product Hunt での活動をレベルアップ",
+    "description1": "今すぐ",
+    "description2": "PH Copilot",
+    "description3": "をインストールして、",
+    "description4": "プロフェッショナルなHunter",
+    "description5": "を始めよう！",
+    "description6": ""
+  },
+  "CTAButton": {
+    "title": "拡張機能を追加"
+  }
+}

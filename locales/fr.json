@@ -1,0 +1,46 @@
+{
+  "Hero": {
+    "title1": "Aperçu et commentaire rapides sur ProductHunt",
+    "description": "Obtenez un aperçu et un commentaire de produit générés par IA en 10 secondes. Gagnez du temps et amplifiez votre impact sur ProductHunt."
+  },
+  "SocialProof": {
+    "maker": "Créateurs ou Chasseurs"
+  },
+  "HowItWork": {
+    "title": "Comment ça marche"
+  },
+  "Feature": {
+    "title": "Fonctionnalités"
+  },
+  "Pricing": {
+    "title": "Tarifs",
+    "title2": "Démarquez-vous sur Product Hunt",
+    "description": "Remise actuelle limitée aux 100 premiers clients.",
+    "signInRequired": "Connexion nécessaire",
+    "signInDescription": "Veuillez vous connecter pour finaliser votre achat.",
+    "doYouLike": "Envoyez-nous un MP sur Twitter pour un code de réduction de 20%.",
+    "follow": "Twitter"
+  },
+  "Testimonials": {
+    "title": "Témoignages",
+    "description1": "",
+    "description2": "",
+    "description3": ""
+  },
+  "FAQ": {
+    "title": "FAQ",
+    "description": "Voici quelques-unes des questions les plus fréquemment posées."
+  },
+  "CTA": {
+    "title": "Passez au Niveau Supérieur sur Product Hunt",
+    "description1": "Obtenez",
+    "description2": "PH Copilot",
+    "description3": "maintenant et",
+    "description4": "chassez plus intelligemment",
+    "description5": ", pas plus difficilement",
+    "description6": "!"
+  },
+  "CTAButton": {
+    "title": "Installer l'Extension"
+  }
+}

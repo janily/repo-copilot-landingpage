@@ -1,0 +1,47 @@
+{
+  "Hero": {
+    "title1": "ProductHunt 快速概览与生成评论",
+    "description": "10 秒内获取 AI 产品概览和评论；为你节省时间并提升你在 ProductHunt 的影响力。"
+  },
+  "SocialProof": {
+    "maker": "Maker 和 Hunter"
+  },
+  "HowItWork": {
+    "title": "使用方法"
+  },
+  "Feature": {
+    "title": "特性"
+  },
+  "Pricing": {
+    "title": "定价",
+    "title2": "在 Product Hunt 脱颖而出",
+    "description": "当前价格仅限前 100 位付费用户",
+    "signInRequired": "请先登录",
+    "signInDescription": "您需要先登录，然后才能完成购买。",
+    "doYouLike": "联系推特获取 20% 折扣码。",
+    "follow": "联系推特",
+    "twitterUrl": "https://x.com/weijunext"
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "description1": "",
+    "description2": "",
+    "description3": ""
+  },
+  "FAQ": {
+    "title": "FAQs",
+    "description": "这里有一些最常见的问题。"
+  },
+  "CTA": {
+    "title": "立即提升 Product Hunt 使用体验",
+    "description1": "安装",
+    "description2": "PH Copilot",
+    "description3": "插件，快速成为",
+    "description4": "专业 Hunter",
+    "description5": "",
+    "description6": "！"
+  },
+  "CTAButton": {
+    "title": "安装 Chrome 插件"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "Hero": {
+    "title1": "ProductHunt에서의 빠른 개요 및 댓글 생성",
+    "description": "AI 기반 제품 개요와 댓글을 10초 만에 얻으세요. 시간을 절약하고 ProductHunt에서의 영향력을 높이세요."
+  },
+  "SocialProof": {
+    "maker": "메이커 또는 헌터"
+  },
+  "HowItWork": {
+    "title": "사용 방법"
+  },
+  "Feature": {
+    "title": "기능"
+  },
+  "Pricing": {
+    "title": "요금제",
+    "title2": "Product Hunt에서 돋보이세요",
+    "description": "현재 가격은 선착순 100명의 유료 사용자에게만 제공됩니다",
+    "signInRequired": "로그인 안내",
+    "signInDescription": "구매를 위해 로그인이 필요합니다.",
+    "doYouLike": "트위터 DM으로 20% 할인 코드 받기.",
+    "follow": "DM Twitter"
+  },
+  "Testimonials": {
+    "title": "사용자 후기",
+    "description1": "",
+    "description2": "",
+    "description3": ""
+  },
+  "FAQ": {
+    "title": "자주 묻는 질문",
+    "description": "가장 자주 묻는 질문들을 모았습니다."
+  },
+  "CTA": {
+    "title": "Product Hunt 활동을 업그레이드하세요",
+    "description1": "지금 바로 ",
+    "description2": "PH Copilot",
+    "description3": "을 설치하고 ",
+    "description4": "프로페셔널 Hunter",
+    "description5": "을 시작하세요!",
+    "description6": ""
+  },
+  "CTAButton": {
+    "title": "확장 프로그램 추가"
+  }
+}
