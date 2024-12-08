@@ -1,3 +1,4 @@
 {
-  "/api/generate-ai-response/route": "app/api/generate-ai-response/route.js"
+  "/page": "app/page.js",
+  "/[lang]/page": "app/[lang]/page.js"
 }

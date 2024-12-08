@@ -59,12 +59,54 @@ export function assembleOverviewPrompt({ productDetails, language }: { productDe
 `;
 }
 
-export function assembleChatPrompt({ messages, language }: { messages: Array<{role: string, content: string}>, language?: string }): string {
-  return `You are a helpful AI assistant that can engage in natural conversations. ${language ? `Please respond in ${language}.` : 'Please respond in English.'} Please be clear and concise in your responses.
+export function assembleCodeExplainPrompt({ codeDetails, language }: { 
+  codeDetails: Array<{path: string, content: string}>, 
+  language?: string 
+  }): string {
+    return `You are an expert programmer. Please analyze and explain the following code:
 
-Previous conversation context:
-${messages.map(msg => `${msg.role}: ${msg.content}`).join('\n')}
+  ${codeDetails.map(file => `
+  File: ${file.path}
+  \`\`\`
+  ${file.content}
+  \`\`\`
+  `).join('\n')}
 
-Please provide a natural and helpful response to continue the conversation. Remember to respond in ${language || 'English'}.
-`;
+  Please provide your analysis in ${language || 'English'} with the following structure:
+  1. Main purpose and functionality
+  2. Key components and implementation details
+  3. Notable patterns or techniques used
+  4. Best practices and potential improvements
+
+  Be clear and concise in your explanation.`;
+}
+
+export function assembleCodeVisualizationPrompt({ 
+  codeDetails, 
+  language 
+}: { 
+  codeDetails: Array<{path: string, content: string}>, 
+  language?: string 
+}): string {
+  return `You are an expert at data and concept visualization. Please create a Mermaid diagram visualization for the following code:
+
+  ${codeDetails.map(file => `
+  File: ${file.path}
+  \`\`\`
+  ${file.content}
+  \`\`\`
+  `).join('\n')}
+
+  Please provide your visualization in ${language || 'English'} following these requirements:
+  1. Create a Mermaid diagram that visualizes the code structure, flow, and relationships
+  2. Use appropriate diagram types (flowchart, class diagram, sequence diagram, etc.)
+  3. Include all significant components and their connections
+  4. Keep the visualization clear and focused on the core concepts
+  5. Add brief labels and descriptions to explain key elements
+
+  Output format:
+  1. Mermaid diagram syntax (enclosed in \`\`\`mermaid blocks)
+  2. A bullet-point explanation of how the visualization represents the code
+
+  Ensure the diagram is syntactically correct and can be rendered in Markdown.`;
 }

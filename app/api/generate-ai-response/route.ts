@@ -2,7 +2,7 @@ export const maxDuration = 60;
 
 import { auth, db } from '@/lib/firebase/firebase-admin';
 import { prefixByEnv } from '@/lib/prefixByEnv';
-import { assembleCommentPrompt, assembleOverviewPrompt, assembleChatPrompt } from '@/lib/prompt';
+import { assembleCommentPrompt, assembleOverviewPrompt, assembleCodeExplainPrompt, assembleCodeVisualizationPrompt } from '@/lib/prompt';
 import translations from '@/lib/translations';
 import { ProductDetailTypes } from '@/types/product';
 import { StoreUserData } from '@/types/user';
@@ -13,7 +13,9 @@ import OpenAI from 'openai';
 const FEATURE_TO_COST: Record<string, string> = {
   'overviews': process.env.NEXT_PUBLIC_OVERVIEW_COST || '1',
   'comments': process.env.NEXT_PUBLIC_COMMENT_COST || '5',
-  'chat': process.env.NEXT_PUBLIC_CHAT_COST || '1'  // 添加聊天功能的成本
+  'chat': process.env.NEXT_PUBLIC_CHAT_COST || '1',  // 添加聊天功能的成本
+  'explainCode': process.env.NEXT_PUBLIC_EXPLAIN_CODE_COST || '1',
+  'codeVisualization': process.env.NEXT_PUBLIC_VISUALIZATION_COST || '1'  // Add cost for visualization
 }
 
 type ModelPlatform = 'ChatGPT' | 'Claude' | 'Gemini' | 'DeepSeek';
@@ -25,6 +27,7 @@ interface DetermineModelInput {
   length?: number;
   storeUserData: StoreUserData;
   messages?: Array<{role: string, content: string}>;  // 添加聊天消息数组
+  codeDetails?: Array<{path: string, content: string}>;
 }
 
 interface ModelDetermination {
@@ -32,6 +35,7 @@ interface ModelDetermination {
   model: string;
   modelPlatform: string;
   client: any;
+
 }
 
 interface SaveToFirebaseProps {
@@ -49,12 +53,12 @@ const CREDITS_TIP = ({ language, key }: { language: string; key: string }) => {
 export async function POST(request: NextRequest) {
   try {
     const { token, storeUserData } = await validateAuthToken(request);
-    const { productDetails, feature, language, length, messages } = await request.json();
+    const { productDetails, feature, language, length, messages, codeDetails } = await request.json();
 
     // TODO: 有会员功能后，添加判断，符合条件（会员+有选择模型）这一步跳过
     await checkCredits(storeUserData, feature, language);
 
-    const { prompt, model, client } = await setupAIModelAndPrompt({ productDetails, feature, language, length, storeUserData, messages });
+    const { prompt, model, client } = await setupAIModelAndPrompt({ productDetails, feature, language, length, storeUserData, messages, codeDetails });
 
     const stream = await generateAIResponse(client, model, prompt);
     return createStreamResponse(stream, storeUserData, productDetails, feature);
@@ -172,7 +176,7 @@ async function saveToFirebase({ productDetails, userId, email, aiResponse, featu
   }
 }
 
-async function setupAIModelAndPrompt({ productDetails, feature, language, length, storeUserData, messages }: DetermineModelInput): Promise<ModelDetermination> {
+async function setupAIModelAndPrompt({ productDetails, feature, language, length, storeUserData, codeDetails }: DetermineModelInput): Promise<ModelDetermination> {
   let prompt;
   if (feature === 'overviews') {
     if (!productDetails) throw new Error('Product details are required for overviews');
@@ -180,9 +184,13 @@ async function setupAIModelAndPrompt({ productDetails, feature, language, length
   } else if (feature === 'comments') {
     if (!productDetails) throw new Error('Product details are required for comments');
     prompt = await assembleCommentPrompt({ productDetails, length });
-  } else if (feature === 'chat') {
-    if (!messages) throw new Error('Messages are required for chat');
-    prompt = await assembleChatPrompt({ messages, language });
+  } else if (feature === 'explainCode') {
+    console.log('language', language);
+    if (!codeDetails) throw new Error('Code details are required for explain');
+    prompt = await assembleCodeExplainPrompt({ codeDetails, language });
+  } else if (feature === 'codeVisualization') {
+    if (!codeDetails) throw new Error('Code details are required for visualization');
+    prompt = await assembleCodeVisualizationPrompt({ codeDetails, language });
   }
   const { model, modelPlatform, client } = await defaultModelAndPlatform({ feature });
   return { prompt: prompt!, model, modelPlatform, client };
@@ -200,6 +208,13 @@ const defaultModelAndPlatform = async ({ feature }: { feature: string }) => {
     const model = process.env.CHAT_MODEL || 'gpt-3.5-turbo';
     const modelPlatform = process.env.CHAT_MODEL_PLATFORM || 'CHATGPT';
     const platformKey = (modelPlatform === 'DEEPSEEK' ? process.env.DEEPSEEK_API_KEY : process.env.OPENAI_API_KEY);
+    if (!platformKey) throw new Error('API key is required');
+    const client = getPlatformClient({ platform: modelPlatform, key: platformKey });
+    return { model, modelPlatform, client };
+  } else if (feature === 'explainCode' || feature === 'codeVisualization') { 
+    const model = process.env.VISUALIZATION_MODEL || 'gpt-3.5-turbo';
+    const modelPlatform = process.env.VISUALIZATION_MODEL_PLATFORM || 'CHATGPT';
+    const platformKey = (modelPlatform === 'QWEN' ? process.env.QWEN_API_KEY : process.env.OPENAI_API_KEY);
     if (!platformKey) throw new Error('API key is required');
     const client = getPlatformClient({ platform: modelPlatform, key: platformKey });
     return { model, modelPlatform, client };
@@ -224,6 +239,13 @@ const getPlatformClient = ({ platform, key }: { platform: string; key: string })
     return new OpenAI({
       apiKey: key,
       baseURL: process.env.DEEPSEEK_BASE_URL,
+    })
+  }
+
+  if(lowerCase === 'QWEN') {
+    return new OpenAI({
+      apiKey: key,
+      baseURL: process.env.QWEN_BASE_URL,
     })
   }
   throw new Error(`Unsupported platform: ${platform}`);
