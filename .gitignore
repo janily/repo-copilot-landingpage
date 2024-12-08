@@ -3,5 +3,11 @@ node_modules
 .env.local
 .env.development.local
 .env.test.local
-.env.production.local
+.env.production.localg
 .next
+.next/cache
+.next/static
+.next/static/chunks
+.next/static/chunks/pages
+.next/static/chunks/app
+.next/static/chunks/app/page.js
