@@ -37,29 +37,11 @@ export default function Footer() {
       follow: [
         {
           name: "Twitter/X",
-          href: "https://x.com/wayne_dev",
-        },
-        {
-          name: "Youtube",
-          href: "https://www.youtube.com/@Wayne_dev",
+          href: "https://x.com/janilychen",
         },
         {
           name: "Email",
-          href: "mailto:support@phcopilot.ai",
-        },
-      ],
-      friends: [
-        {
-          name: "Smart Excel AI",
-          href: "https://smartexcel.cc/?utm_source=phcopilot&utm_medium=referral",
-        },
-        {
-          name: "Landing Page Boilerplate",
-          href: "https://landingpage.weijunext.com/?utm_source=phcopilot&utm_medium=referral",
-        },
-        {
-          name: "Woy AI Tools Directory",
-          href: "https://woy.ai/",
+          href: "mailto:07jackychen@gmail.com",
         },
       ],
       languages: Object.keys(localeNames).map((key) => ({
@@ -116,9 +98,9 @@ export default function Footer() {
   return (
     <footer className="flex w-full flex-col border-t border-gray-600">
       <div className="px-6 py-8 mt-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 md:pr-8 mt-6">
-            <div className="flex flex-row gap-2 justify-start">
+        <div className="container mx-auto xl:grid xl:grid-cols-3 xl:gap-8">
+          <div className="space-y-8 md:pr-8">
+            <div className="flex flex-row gap-2 items-center">
               <Image
                 alt="Logo"
                 src="/logo.svg"
@@ -128,34 +110,28 @@ export default function Footer() {
               />
               <h2 className="text-medium font-medium">{siteConfig.name}</h2>
             </div>
-            <span className="text-small text-default-500">
+            <span className="text-small text-default-500 block">
               {siteConfig.description}
             </span>
           </div>
-          <div className="mt-6 grid grid-cols-1 gap-8 xl:col-span-2">
-            <div className="md:grid md:grid-cols-4 md:gap-8">
-              <div className="mt-10 md:mt-0">
+          <div className="grid grid-cols-1 gap-8 xl:col-span-2">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
                 {renderList({
-                  title: "PHCopilot.AI",
+                  title: "CodeLoom",
                   items: footerNavigation.current,
                 })}
               </div>
-              <div className="mt-10 md:mt-0">
+              <div>
                 {renderList({
                   title: "Language",
                   items: footerNavigation.languages,
                 })}
               </div>
-              <div className="mt-10 md:mt-0">
+              <div>
                 {renderList({
                   title: "Follow Me",
                   items: footerNavigation.follow,
-                })}
-              </div>
-              <div>
-                {renderList({
-                  title: "Friends",
-                  items: footerNavigation.friends,
                 })}
               </div>
             </div>

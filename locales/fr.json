@@ -1,10 +1,10 @@
 {
   "Hero": {
-    "title1": "Aperçu et commentaire rapides sur ProductHunt",
-    "description": "Obtenez un aperçu et un commentaire de produit générés par IA en 10 secondes. Gagnez du temps et amplifiez votre impact sur ProductHunt."
+    "title1": "Visualisez Votre Code avec des Diagrammes de Flux Alimentés par l'IA",
+    "description": "Transformez du code complexe en diagrammes de flux clairs et intuitifs en quelques secondes. Laissez CodeLoom tisser votre code en chefs-d'œuvre visuels."
   },
   "SocialProof": {
-    "maker": "Créateurs ou Chasseurs"
+    "maker": "Développeurs et Utilisateurs"
   },
   "HowItWork": {
     "title": "Comment ça marche"
@@ -14,12 +14,12 @@
   },
   "Pricing": {
     "title": "Tarifs",
-    "title2": "Démarquez-vous sur Product Hunt",
-    "description": "Remise actuelle limitée aux 100 premiers clients.",
-    "signInRequired": "Connexion nécessaire",
+    "title2": "Plan Gratuit (Plan Pro à Venir)",
+    "description": "Commencez à visualiser votre code aujourd'hui",
+    "signInRequired": "Connexion Requise",
     "signInDescription": "Veuillez vous connecter pour finaliser votre achat.",
-    "doYouLike": "Envoyez-nous un MP sur Twitter pour un code de réduction de 20%.",
-    "follow": "Twitter"
+    "doYouLike": "Besoin de plus de crédits ? Contactez-moi sur Twitter.",
+    "follow": "DM Twitter"
   },
   "Testimonials": {
     "title": "Témoignages",
@@ -29,18 +29,18 @@
   },
   "FAQ": {
     "title": "FAQ",
-    "description": "Voici quelques-unes des questions les plus fréquemment posées."
+    "description": "Questions fréquentes sur CodeLoom"
   },
   "CTA": {
-    "title": "Passez au Niveau Supérieur sur Product Hunt",
+    "title": "Commencez à Visualiser Votre Code Aujourd'hui",
     "description1": "Obtenez",
-    "description2": "PH Copilot",
+    "description2": "CodeLoom",
     "description3": "maintenant et",
-    "description4": "chassez plus intelligemment",
-    "description5": ", pas plus difficilement",
+    "description4": "transformez",
+    "description5": "votre compréhension du code",
     "description6": "!"
   },
   "CTAButton": {
-    "title": "Installer l'Extension"
+    "title": "Ajouter à Chrome"
   }
 }

@@ -1,7 +1,7 @@
 {
   "Hero": {
-    "title1": "Fast Overview & Comment on ProductHunt",
-    "description": "Get AI-powered product overview and comment in 10 seconds. Save your time and amplify your impact on ProductHunt."
+    "title1": "Visualize Your Code with AI-Powered Flow Charts",
+    "description": "Transform complex code into clear, intuitive flow charts in seconds. Let CodeLoom weave your code into visual masterpieces."
   },
   "SocialProof": {
     "maker": "Makers or Hunter"
@@ -10,15 +10,15 @@
     "title": "How it works"
   },
   "Feature": {
-    "title": "Feature"
+    "title": "Features"
   },
   "Pricing": {
     "title": "Pricing",
-    "title2": "Stand Out on Product Hunt",
-    "description": "Current discount applies to first 100 customers only",
+    "title2": "Free Plan (Pro Plan Coming Soon)",
+    "description": "Start visualizing your code today",
     "signInRequired": "Sign In Required",
     "signInDescription": "Please sign in to complete your purchase.",
-    "doYouLike": "DM us on Twitter for a 20% discount code.",
+    "doYouLike": "Need more credits? DM me on Twitter.",
     "follow": "DM Twitter"
   },
   "Testimonials": {
@@ -29,15 +29,15 @@
   },
   "FAQ": {
     "title": "FAQs",
-    "description": "Here are some of the most frequently asked questions."
+    "description": "Common questions about CodeLoom"
   },
   "CTA": {
-    "title": "Level Up Your Product Hunt Game",
+    "title": "Start Visualizing Your Code Today",
     "description1": "Get",
-    "description2": "PH Copilot",
+    "description2": "CodeLoom",
     "description3": "now and",
-    "description4": "hunt smarter",
-    "description5": ", not harder",
+    "description4": "transform",
+    "description5": "your code understanding",
     "description6": "!"
   },
   "CTAButton": {

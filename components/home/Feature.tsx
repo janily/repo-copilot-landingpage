@@ -1,4 +1,4 @@
-import { ALL_FEATURES } from "@/config/feature";
+import { ALL_FEATURES } from "@/config/features";
 import React from "react";
 
 const Feature = ({

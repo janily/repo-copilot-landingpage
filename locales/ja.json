@@ -1,25 +1,25 @@
 {
   "Hero": {
-    "title1": "ProductHuntで素早く概要を把握し、コメントを生成",
-    "description": "AIを活用して10秒で製品の概要とコメントを取得。時間を節約し、ProductHuntでの影響力を高めましょう。"
+    "title1": "AIパワードフローチャートでコードを可視化",
+    "description": "複雑なコードを数秒で明確で直感的なフローチャートに変換。CodeLoomがあなたのコードを視覚的な傑作に織り上げます。"
   },
   "SocialProof": {
-    "maker": "メーカーまたはハンター"
+    "maker": "開発者とユーザー"
   },
   "HowItWork": {
-    "title": "使い方"
+    "title": "使用方法"
   },
   "Feature": {
     "title": "機能"
   },
   "Pricing": {
     "title": "料金プラン",
-    "title2": "Product Hunt で際立つ",
-    "description": "現在の特別価格は先着100名の有料会員様限定です",
-    "signInRequired": "ログインのお願い",
-    "signInDescription": "お買い物を続けるには、ログインが必要です。",
-    "doYouLike": "Twitterでのお問い合わせで20%割引コード進呈。",
-    "follow": "DM Twitter"
+    "title2": "無料プラン（プロプラン近日公開）",
+    "description": "今すぐコードの可視化を始めましょう",
+    "signInRequired": "ログインが必要です",
+    "signInDescription": "購入を完了するにはログインしてください。",
+    "doYouLike": "より多くのクレジットが必要ですか？Twitterでお問い合わせください。",
+    "follow": "Twitter DM"
   },
   "Testimonials": {
     "title": "お客様の声",
@@ -29,18 +29,18 @@
   },
   "FAQ": {
     "title": "よくある質問",
-    "description": "最もよくある質問をまとめました。"
+    "description": "CodeLoomに関するよくある質問"
   },
   "CTA": {
-    "title": "Product Hunt での活動をレベルアップ",
-    "description1": "今すぐ",
-    "description2": "PH Copilot",
-    "description3": "をインストールして、",
-    "description4": "プロフェッショナルなHunter",
-    "description5": "を始めよう！",
-    "description6": ""
+    "title": "今すぐコードの可視化を始めましょう",
+    "description1": "",
+    "description2": "CodeLoom",
+    "description3": "で",
+    "description4": "コードの理解を",
+    "description5": "深めましょう",
+    "description6": "！"
   },
   "CTAButton": {
-    "title": "拡張機能を追加"
+    "title": "Chromeに追加"
   }
 }

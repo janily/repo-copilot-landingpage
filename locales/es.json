@@ -1,25 +1,25 @@
 {
   "Hero": {
-    "title1": "Resumen y comentario rápidos en ProductHunt",
-    "description": "Obtén resumen y comentario de productos impulsados por IA en 10 segundos. Ahorra tiempo y amplifica tu impacto en ProductHunt."
+    "title1": "Visualiza Tu Código con Diagramas de Flujo Impulsados por IA",
+    "description": "Transforma código complejo en diagramas de flujo claros e intuitivos en segundos. Deja que CodeLoom teja tu código en obras maestras visuales."
   },
   "SocialProof": {
-    "maker": "Creadores o Cazadores"
+    "maker": "Desarrolladores y Usuarios"
   },
   "HowItWork": {
-    "title": "Cómo funciona"
+    "title": "Cómo Funciona"
   },
   "Feature": {
     "title": "Características"
   },
   "Pricing": {
     "title": "Precios",
-    "title2": "Destácate en Product Hunt",
-    "description": "Descuento actual limitado a los primeros 100 clientes.",
-    "signInRequired": "Acceso necesario",
-    "signInDescription": "Accede a tu cuenta para finalizar la compra.",
-    "doYouLike": "Envíanos un MD en Twitter para un código de descuento del 20%.",
-    "follow": "Twitter"
+    "title2": "Plan Gratuito (Plan Pro Próximamente)",
+    "description": "Comienza a visualizar tu código hoy",
+    "signInRequired": "Inicio de Sesión Requerido",
+    "signInDescription": "Por favor, inicia sesión para completar tu compra.",
+    "doYouLike": "¿Necesitas más créditos? Envíame un DM en Twitter.",
+    "follow": "DM Twitter"
   },
   "Testimonials": {
     "title": "Testimonios",
@@ -29,18 +29,18 @@
   },
   "FAQ": {
     "title": "Preguntas Frecuentes",
-    "description": "Aquí tienes algunas de las preguntas más frecuentes."
+    "description": "Preguntas comunes sobre CodeLoom"
   },
   "CTA": {
-    "title": "Mejora tu Juego en Product Hunt",
+    "title": "Comienza a Visualizar tu Código Hoy",
     "description1": "Obtén",
-    "description2": "PH Copilot",
+    "description2": "CodeLoom",
     "description3": "ahora y",
-    "description4": "caza de forma más inteligente",
-    "description5": ", no más difícil",
+    "description4": "transforma",
+    "description5": "tu comprensión del código",
     "description6": "!"
   },
   "CTAButton": {
-    "title": "Instalar Extensión"
+    "title": "Añadir a Chrome"
   }
 }

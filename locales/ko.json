@@ -1,25 +1,25 @@
 {
   "Hero": {
-    "title1": "ProductHunt에서의 빠른 개요 및 댓글 생성",
-    "description": "AI 기반 제품 개요와 댓글을 10초 만에 얻으세요. 시간을 절약하고 ProductHunt에서의 영향력을 높이세요."
+    "title1": "AI 기반 순서도로 코드를 시각화하세요",
+    "description": "복잡한 코드를 몇 초 만에 명확하고 직관적인 순서도로 변환합니다. CodeLoom이 당신의 코드를 시각적 걸작으로 만들어냅니다."
   },
   "SocialProof": {
-    "maker": "메이커 또는 헌터"
+    "maker": "개발자와 사용자"
   },
   "HowItWork": {
-    "title": "사용 방법"
+    "title": "작동 방식"
   },
   "Feature": {
     "title": "기능"
   },
   "Pricing": {
-    "title": "요금제",
-    "title2": "Product Hunt에서 돋보이세요",
-    "description": "현재 가격은 선착순 100명의 유료 사용자에게만 제공됩니다",
-    "signInRequired": "로그인 안내",
-    "signInDescription": "구매를 위해 로그인이 필요합니다.",
-    "doYouLike": "트위터 DM으로 20% 할인 코드 받기.",
-    "follow": "DM Twitter"
+    "title": "가격",
+    "title2": "무료 플랜 (프로 플랜 출시 예정)",
+    "description": "지금 바로 코드 시각화를 시작하세요",
+    "signInRequired": "로그인 필요",
+    "signInDescription": "구매를 완료하려면 로그인하세요.",
+    "doYouLike": "더 많은 크레딧이 필요하신가요? Twitter에서 DM을 보내주세요.",
+    "follow": "Twitter DM"
   },
   "Testimonials": {
     "title": "사용자 후기",
@@ -29,18 +29,18 @@
   },
   "FAQ": {
     "title": "자주 묻는 질문",
-    "description": "가장 자주 묻는 질문들을 모았습니다."
+    "description": "CodeLoom에 대한 자주 묻는 질문"
   },
   "CTA": {
-    "title": "Product Hunt 활동을 업그레이드하세요",
-    "description1": "지금 바로 ",
-    "description2": "PH Copilot",
-    "description3": "을 설치하고 ",
-    "description4": "프로페셔널 Hunter",
-    "description5": "을 시작하세요!",
-    "description6": ""
+    "title": "지금 바로 코드 시각화를 시작하세요",
+    "description1": "",
+    "description2": "CodeLoom",
+    "description3": "으로",
+    "description4": "코드 이해도를",
+    "description5": "높이세요",
+    "description6": "!"
   },
   "CTAButton": {
-    "title": "확장 프로그램 추가"
+    "title": "Chrome에 추가"
   }
 }

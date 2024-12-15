@@ -1,47 +1,46 @@
 {
   "Hero": {
-    "title1": "ProductHunt 快速概览与生成评论",
-    "description": "10 秒内获取 AI 产品概览和评论；为你节省时间并提升你在 ProductHunt 的影响力。"
+    "title1": "使用 AI 驱动快速可视化您的代码",
+    "description": "在几秒钟内将复杂的代码转换为清晰、直观的流程图。让 CodeLoom 将您的代码编织成视觉杰作。"
   },
   "SocialProof": {
-    "maker": "Maker 和 Hunter"
+    "maker": "开发者与用户"
   },
   "HowItWork": {
-    "title": "使用方法"
+    "title": "工作原理"
   },
   "Feature": {
-    "title": "特性"
+    "title": "功能特性"
   },
   "Pricing": {
     "title": "定价",
-    "title2": "在 Product Hunt 脱颖而出",
-    "description": "当前价格仅限前 100 位付费用户",
-    "signInRequired": "请先登录",
-    "signInDescription": "您需要先登录，然后才能完成购买。",
-    "doYouLike": "联系推特获取 20% 折扣码。",
-    "follow": "联系推特",
-    "twitterUrl": "https://x.com/weijunext"
+    "title2": "免费计划（专业版即将推出）",
+    "description": "立即开始可视化您的代码",
+    "signInRequired": "需要登录",
+    "signInDescription": "请登录以完成购买。",
+    "doYouLike": "需要更多积分？在 Twitter 上私信我。",
+    "follow": "Twitter 私信"
   },
   "Testimonials": {
-    "title": "Testimonials",
+    "title": "用户评价",
     "description1": "",
     "description2": "",
     "description3": ""
   },
   "FAQ": {
-    "title": "FAQs",
-    "description": "这里有一些最常见的问题。"
+    "title": "常见问题",
+    "description": "关于 CodeLoom 的常见问题"
   },
   "CTA": {
-    "title": "立即提升 Product Hunt 使用体验",
-    "description1": "安装",
-    "description2": "PH Copilot",
-    "description3": "插件，快速成为",
-    "description4": "专业 Hunter",
-    "description5": "",
+    "title": "今天就开始可视化您的代码",
+    "description1": "立即安装",
+    "description2": "CodeLoom",
+    "description3": "，",
+    "description4": "提升",
+    "description5": "代码理解能力",
     "description6": "！"
   },
   "CTAButton": {
-    "title": "安装 Chrome 插件"
+    "title": "添加至 Chrome"
   }
 }

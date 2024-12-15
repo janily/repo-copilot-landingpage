@@ -2,25 +2,25 @@ import { SiteConfig } from "@/types/siteConfig";
 import { BsTwitterX, BsYoutube } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
-const TWITTER_URL = 'https://x.com/wayne_dev'
+const TWITTER_URL = 'https://x.com/janilychen'
 const YOUTUBE_URL = 'https://www.youtube.com/@Wayne_dev'
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://phcopilot.ai'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://codeloom.ai'
 
 const baseSiteConfig = {
-  name: "PH Copilot",
-  description: "PH Copilot is an AI-Powered Chrome Extension that helps you overview products and comment in 10 seconds. Save your time and amplify your impact on ProductHunt.",
+  name: "CodeLoom",
+  description: "CodeLoom is an AI-Powered Chrome Extension that helps you visualize code structure with flow charts. Transform your code understanding with automated diagram generation.",
   url: SITE_URL,
   ogImage: `${SITE_URL}/og.webp`,
   metadataBase: '/',
-  keywords: ["ProductHunt copilot", "ProductHunt comment", "AI-Powered ProductHunt", "ProductHunt AI Assistant"],
+  keywords: ["code visualization", "flow chart generator", "code analysis", "AI code helper", "code diagram", "code structure"],
   authors: [
     {
-      name: "@wayne_dev",
+      name: "@janily",
       url: TWITTER_URL,
       twitter: TWITTER_URL,
     }
   ],
-  creator: '@wayne_dev',
+  creator: '@janily',
   themeColors: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
@@ -33,12 +33,10 @@ const baseSiteConfig = {
   },
   headerLinks: [
     { name: 'twitter', href: TWITTER_URL, icon: BsTwitterX },
-    { name: 'youtube', href: YOUTUBE_URL, icon: BsYoutube }
   ],
   footerLinks: [
     { name: 'email', href: "mailto:support@phcopilot.ai", icon: MdEmail },
     { name: 'twitter', href: TWITTER_URL, icon: BsTwitterX },
-    { name: 'youtube', href: YOUTUBE_URL, icon: BsYoutube }
   ],
   footerProducts: []
 }
