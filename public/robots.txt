@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://landingpage.weijunext.com
+Host: https://codeloom.zeabur.app/
 
 # Sitemaps
-Sitemap: https://landingpage.weijunext.com/sitemap.xml
+Sitemap: https://codeloom.zeabur.app/sitemap.xml

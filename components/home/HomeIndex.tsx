@@ -3,7 +3,7 @@ import FAQ from "@/components/home/FAQ";
 import Feature from "@/components/home/Feature";
 import Hero from "@/components/home/Hero";
 import Pricing from "@/components/home/Pricing";
-import SocialProof from "@/components/home/SocialProof";
+// import SocialProof from "@/components/home/SocialProof";
 import { defaultLocale, getDictionary } from "@/lib/i18n";
 
 export default async function HomeIndex({ lang }: { lang: string }) {
@@ -14,7 +14,7 @@ export default async function HomeIndex({ lang }: { lang: string }) {
     <>
       {/* Hero Section */}
       <Hero locale={dict.Hero} CTALocale={dict.CTAButton} />
-      <SocialProof locale={dict.SocialProof} />
+      {/* <SocialProof locale={dict.SocialProof} /> */}
 
       {/* USP (Unique Selling Proposition) */}
       <Feature id="Features" locale={dict.Feature} langName={langName} />
