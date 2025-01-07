@@ -20,16 +20,12 @@ export default function Footer() {
       },
       {
         name: "Privacy Policy",
-        href: "/privacy-policy",
+        href: "/privacy",
       },
-      {
-        name: "Terms and Conditions",
-        href: "/terms-of-service",
-      },
-      {
-        name: "Affiliate",
-        href: "https://phcopilot.tolt.io",
-      },
+      // {
+      //   name: "Terms and Conditions",
+      //   href: "/terms-of-service",
+      // },
     ];
 
     return {
@@ -103,12 +99,12 @@ export default function Footer() {
             <div className="flex flex-row gap-2 items-center">
               <Image
                 alt="Logo"
-                src="/logo.svg"
+                src="/loom.svg"
                 className="w-6 h-6"
                 width={32}
                 height={32}
               />
-              <h2 className="text-medium font-medium">{siteConfig.name}</h2>
+              <h2 className="text-medium font-medium mb-0">{siteConfig.name}</h2>
             </div>
             <span className="text-small text-default-500 block">
               {siteConfig.description}

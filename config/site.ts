@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 
 const TWITTER_URL = 'https://x.com/janilychen'
 const YOUTUBE_URL = 'https://www.youtube.com/@Wayne_dev'
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://codeloom.ai'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://codeloom.zeabur.app'
 
 const baseSiteConfig = {
   name: "CodeLoom",

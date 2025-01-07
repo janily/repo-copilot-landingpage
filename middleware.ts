@@ -34,18 +34,24 @@ export function middleware(request: NextRequest) {
   // 多语言处理
   const { pathname } = request.nextUrl;
 
+  // 如果路径是 /privacy 或其他静态页面，直接返回
+  if (pathname === '/privacy' || pathname === '/terms-of-service') {
+    return response;
+  }
+
   const isExit = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
   if (isExit) return;
 
+  // 只有当路径不是静态页面时才重定向到根路径
   request.nextUrl.pathname = `/`;
   return Response.redirect(request.nextUrl);
 }
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|terms|.*\\.(?:txt|xml|ico|png|jpg|jpeg|svg|gif|webp|js|css|woff|woff2|ttf|eot)).*)'
+    '/((?!api|_next/static|_next/image|favicon.ico|privacy|terms-of-service|.*\\.(?:txt|xml|ico|png|jpg|jpeg|svg|gif|webp|js|css|woff|woff2|ttf|eot)).*)'
   ]
 };
