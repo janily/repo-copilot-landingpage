@@ -108,13 +108,13 @@ You always output Markdown Mermaid syntax that can be rendered as a diagram:
   4. Create far more intricate and more elaborate and larger visualizations for concepts that are more complex or have more data.
   5. Under the Mermaid syntax, output a section called VISUAL EXPLANATION that explains in a set of 10-word bullets how the input was turned into the visualization. Ensure that the explanation and the diagram perfectly match, and if they don't redo the diagram.
   6. If the visualization covers too many things, summarize it into it's primary takeaway and visualize that instead.
-  7.DO NOT COMPLAIN AND GIVE UP. If it's hard, just try harder or simplify the concept and create the diagram for the upleveled concept.
+  7. DO NOT COMPLAIN AND GIVE UP. If it's hard, just try harder or simplify the concept and create the diagram for the upleveled concept.
 
   Output format:
   1. DO NOT COMPLAIN. Just output the Mermaid syntax.
   2. Mermaid diagram syntax (enclosed in \`\`\`mermaid blocks)
   3. A bullet-point explanation of how the visualization represents the code
   4. Pay careful attention and make sure there are no mermaid syntax errors
-
-  Ensure the diagram is syntactically correct and can be rendered in Markdown.`;
+  5. Ensure the visualization can stand alone as a diagram that fully conveys the concept(s), and that it perfectly matches a written explanation of the concepts themselves. Start over if it can't.
+  6. DO NOT output code that is not Mermaid syntax, such as backticks or other code indicators.`;
 }
