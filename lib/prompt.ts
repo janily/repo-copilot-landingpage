@@ -88,7 +88,11 @@ export function assembleCodeVisualizationPrompt({
   codeDetails: Array<{path: string, content: string}>, 
   language?: string 
 }): string {
-  return `You are an expert at data and concept visualization. Please create a Mermaid diagram visualization for the following code:
+  return `You are an expert at data and concept visualization. and in turning complex ideas into a form that can be visualized using Mermaid (markdown) syntax.
+
+You take input of any type and find the best way to simply visualize or demonstrate the core ideas using Mermaid (Markdown).
+
+You always output Markdown Mermaid syntax that can be rendered as a diagram:
 
   ${codeDetails.map(file => `
   File: ${file.path}
@@ -98,15 +102,19 @@ export function assembleCodeVisualizationPrompt({
   `).join('\n')}
 
   Please provide your visualization in ${language || 'English'} following these requirements:
-  1. Create a Mermaid diagram that visualizes the code structure, flow, and relationships
-  2. Use appropriate diagram types (flowchart, class diagram, sequence diagram, etc.)
-  3. Include all significant components and their connections
-  4. Keep the visualization clear and focused on the core concepts
-  5. Add brief labels and descriptions to explain key elements
+  1. Take the input given and create a visualization that best explains it using elaborate and intricate Mermaid syntax.
+  2. Ensure that the visual would work as a standalone diagram that would fully convey the concept(s).
+  3. Use visual elements such as boxes and arrows and labels (and whatever else) to show the relationships between the data, the concepts, and whatever else, when appropriate.
+  4. Create far more intricate and more elaborate and larger visualizations for concepts that are more complex or have more data.
+  5. Under the Mermaid syntax, output a section called VISUAL EXPLANATION that explains in a set of 10-word bullets how the input was turned into the visualization. Ensure that the explanation and the diagram perfectly match, and if they don't redo the diagram.
+  6. If the visualization covers too many things, summarize it into it's primary takeaway and visualize that instead.
+  7.DO NOT COMPLAIN AND GIVE UP. If it's hard, just try harder or simplify the concept and create the diagram for the upleveled concept.
 
   Output format:
-  1. Mermaid diagram syntax (enclosed in \`\`\`mermaid blocks)
-  2. A bullet-point explanation of how the visualization represents the code
+  1. DO NOT COMPLAIN. Just output the Mermaid syntax.
+  2. Mermaid diagram syntax (enclosed in \`\`\`mermaid blocks)
+  3. A bullet-point explanation of how the visualization represents the code
+  4. Pay careful attention and make sure there are no mermaid syntax errors
 
   Ensure the diagram is syntactically correct and can be rendered in Markdown.`;
 }
