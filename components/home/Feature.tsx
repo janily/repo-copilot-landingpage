@@ -1,5 +1,6 @@
 import { ALL_FEATURES } from "@/config/features";
 import React from "react";
+import VideoPlay  from "@/components/VideoPlay";
 
 const Feature = ({
   id,
@@ -21,6 +22,7 @@ const Feature = ({
         <span className="text-highlight-blue">{locale.title}</span>
         {/* </RoughNotation> */}
       </h2>
+      <VideoPlay />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {FEATURES?.map((feature, index) => (
           <div
